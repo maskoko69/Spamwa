@@ -2,7 +2,7 @@ const phoneNumberForm = document.getElementById('phoneNumberForm');
 const stopButton = document.getElementById('stopButton');
 const responseMessage = document.getElementById('responseMessage');
 const stopNotification = document.getElementById('stopNotification');
-const socket = new WebSocket('ws://web-spam-pairingcode.vercel.app'); // Periksa URL WebSocket
+const socket = new WebSocket('ws://https://spamwa-maskoko69s-projects.vercel.app'); // Periksa URL WebSocket
 
 phoneNumberForm.addEventListener('submit', function(event) {
     event.preventDefault();
