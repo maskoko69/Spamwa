@@ -1,0 +1,25 @@
+{
+  "name": "spampairing",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.7",
+    "awesome-phonenumber": "^7.0.1",
+    "axios": "^1.7.5",
+    "chalk": "^5.3.0",
+    "express": "^4.19.2",
+    "file-type": "^19.4.1",
+    "lodash": "^4.17.21",
+    "moment-timezone": "^0.5.45",
+    "pino": "^9.3.2"
+  },
+  "scripts": {
+    "build": "npm run vercel-build && node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
