@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masukkan Nomor WhatsApp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: url('/media/bg1') no-repeat center center fixed;
+            background-size: cover;
+        }
+        #phoneNumberForm {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button.stop {
+            background-color: #dc3545;
+        }
+        #responseMessage, #stopNotification {
+            margin-top: 20px;
+        }
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Masukkan Nomor WhatsApp</h1>
+    <form id="phoneNumberForm">
+        <label for="phoneNumber">Nomor WhatsApp:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="6281234567890" required>
+        <button type="submit">Kirim</button>
+        <button type="button" class="stop" id="stopButton">Stop</button>
+    </form>
+    <p id="responseMessage"></p>
+    <p id="stopNotification"></p>
+    <div id="footer">Created By YosepWD</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
